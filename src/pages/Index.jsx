@@ -5,13 +5,13 @@ const Index = () => {
   return (
     <Container maxW="container.xl" height="100vh" display="flex" flexDirection="column" p={0}>
       {/* Navigation Bar */}
-      <Box bg="brand.800" color="white" p={4}>
+      <Box bg="brand.700" color="white" p={4}>
         <Heading size="md">Chat App</Heading>
       </Box>
 
       <Flex flex="1" overflow="hidden">
         {/* Sidebar for Contacts */}
-        <Box bg="gray.100" width={{ base: "100%", md: "300px" }} p={4} overflowY="auto">
+        <Box bg="brand.100" width={{ base: "100%", md: "300px" }} p={4} overflowY="auto">
           <VStack align="start" spacing={4}>
             <Heading size="sm">Contacts</Heading>
             <HStack>
@@ -37,7 +37,7 @@ const Index = () => {
       </Flex>
 
       {/* Text Input Area */}
-      <Box p={4} bg="gray.200">
+      <Box p={4} bg="brand.200">
         <HStack>
           <Input placeholder="Type a message..." flex="1" />
           <IconButton aria-label="Send" icon={<FaPaperPlane />} colorScheme="blue" />
